@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <title>Typing-test</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="stats">
+            <p>Time: <span id="timer">60s</span></p>
+            <p>Mistakes: <span id="mistakes">0</span></p>
+        </div>
+
+        <div id="quote-section" onmousedown="return false" onselect="return false"></div>
+
+        <div id="quote-author-section"></div>
+
+        <textarea id="quote-input" placeholder="Type text here..." rows="3"></textarea>
+
+        <button id="start-test" onclick="startTest()">Start</button>
+        <button id="finish-test" onclick="displayResults()">Finish</button>
+
+        <div class="results">
+            <h3>Results</h3>
+            <div class="results-wrapper">
+                <p>Accuracy: <span id="accuracy"></span></p>
+                <p>Speed: <span id="wpm"></span></p>
+            </div>
+        </div>
+
+        <button id="restart-test" onclick="restartTest()">Restart</button>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
