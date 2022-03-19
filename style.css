@@ -10,8 +10,7 @@ body {
 }
 
 .container {
-    width: 500px;
-    /* width: 80vmin; */
+    width: 80vmin;
     padding: 50px 30px;
     background-color: white;
     border-radius: 10px;
@@ -101,5 +100,6 @@ button:hover {
 .fail {
     color: #e81c4e;
 }
+
 
 
